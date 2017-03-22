@@ -6,6 +6,10 @@ import { GithubService } from './github/shared/github.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
+import {MdCardModule} from '@angular/material/card';
+import {MdButtonModule} from '@angular/material/button';
+import {MdIconModule} from '@angular/material/icon';
+import {MdIconRegistry} from '@angular/material/icon';
 
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
@@ -29,7 +33,7 @@ import { ContactComponent } from './contact/contact.component';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpModule,
+    HttpModule,BrowserModule, MdCardModule, MdButtonModule, MdIconModule,
     RouterModule.forRoot(rootRouterConfig, { useHash: true })
   ],
   providers: [
