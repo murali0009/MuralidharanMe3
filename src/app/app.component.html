@@ -1,23 +1,25 @@
-<h3>
-  Angular 2 Seed
-</h3>
-<nav>
-	<a [routerLink]="['/']">
+<md-toolbar>
+
+    <h3>Muralidharan Nandakumar</h3>
+    <div flex></div>
+
+    <button  md-raised-button [routerLink]="['/']">
     Home
-  </a>
-  |
-	<a [routerLink]="['/about']">
-    About
-  </a>
-  |
-	<a [routerLink]="['/github', 'angular']">
-    Github Repos
-  </a>
-  |
-	<a [routerLink]="['/contact']">
-    Contact Us
-  </a>
-</nav>
+    </button>
+
+    <button md-raised-button [routerLink]="['/about']">
+      About
+    </button>
+
+    <button md-raised-button [routerLink]="['/github', 'angular']">
+      Github Repos
+    </button>
+
+    <button md-raised-button [routerLink]="['/contact']">
+      Contact Us
+    </button>
+
+</md-toolbar>
 
 <main>
 	<router-outlet></router-outlet>

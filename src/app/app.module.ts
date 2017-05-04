@@ -7,8 +7,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import {MdCardModule} from '@angular/material/card';
-import {MdButtonModule} from '@angular/material/button';
 import {MdIconModule} from '@angular/material/icon';
+import {MdButtonModule} from '@angular/material/button';
+import {MdToolbarModule} from '@angular/material/toolbar';
 import {MdIconRegistry} from '@angular/material/icon';
 
 import { AboutComponent } from './about/about.component';
@@ -33,7 +34,7 @@ import { ContactComponent } from './contact/contact.component';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpModule,BrowserModule, MdCardModule, MdButtonModule, MdIconModule,
+    HttpModule,BrowserModule, MdCardModule, MdButtonModule, MdIconModule, MdToolbarModule,
     RouterModule.forRoot(rootRouterConfig, { useHash: true })
   ],
   providers: [
