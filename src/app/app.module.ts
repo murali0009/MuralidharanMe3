@@ -6,11 +6,11 @@ import { GithubService } from './github/shared/github.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
-import {MdCardModule} from '@angular/material/card';
-import {MdIconModule} from '@angular/material/icon';
-import {MdButtonModule} from '@angular/material/button';
-import {MdToolbarModule} from '@angular/material/toolbar';
-import {MdIconRegistry} from '@angular/material/icon';
+import {MdCardModule} from '@angular2-material/card';
+import {MdIconModule} from '@angular2-material/icon';
+import {MdButtonModule} from '@angular2-material/button';
+import {MdToolbarModule} from '@angular2-material/toolbar';
+import {MdIconRegistry} from '@angular2-material/icon';
 
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
