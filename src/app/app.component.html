@@ -1,25 +1,48 @@
 <md-toolbar>
-
     <h3>Muralidharan Nandakumar</h3>
-    <div flex></div>
+    <span class="example-fill-remaining-space"></span>
+    
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
 
-    <button  md-raised-button [routerLink]="['/']">
-    Home
-    </button>
+      <div class="navbar-header">
+        <button md-button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+      </div>
 
-    <button md-raised-button [routerLink]="['/about']">
-      About
-    </button>
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="nav navbar-nav">
+          <li><a [routerLink]="['/']">Link</a></li>
+          <li><a [routerLink]="['/about']">Link</a></li>
+          <li><a [routerLink]="['/github']">Link</a></li>
+          <li><a [routerLink]="['/contact']">Link</a></li>
+        </ul>
+      </div>
+    </nav>
 
-    <button md-raised-button [routerLink]="['/github', 'angular']">
-      Github Repos
-    </button>
+    <!-- <button md-button [routerLink]="['/']">
+      Home
+      </button>
 
-    <button md-raised-button [routerLink]="['/contact']">
-      Contact Us
-    </button>
+      <button md-button [routerLink]="['/about']">
+        About
+      </button>
 
+      <button md-button [routerLink]="['/github', 'angular']">
+        Github Repos
+      </button>
+
+      <button md-raised-button [routerLink]="['/contact']">
+        Contact Me
+    </button> -->
 </md-toolbar>
+
+
+
+
 
 <main>
 	<router-outlet></router-outlet>
@@ -27,5 +50,5 @@
 
 
 <footer>
-  © 2016
+  Muralidharan Nandakumar © 2016
 </footer>
