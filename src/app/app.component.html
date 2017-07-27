@@ -1,29 +1,10 @@
 <md-toolbar>
+  <div class="container-fluid">
     <h3>Muralidharan Nandakumar</h3>
-    <span class="example-fill-remaining-space"></span>
-    
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
-
-      <div class="navbar-header">
-        <button md-button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="sr-only">Toggle navigation</span>
-        </button>
-      </div>
-
-      <div class="collapse navbar-collapse" id="navigation">
-        <ul class="nav navbar-nav">
-          <li><a [routerLink]="['/']">Link</a></li>
-          <li><a [routerLink]="['/about']">Link</a></li>
-          <li><a [routerLink]="['/github']">Link</a></li>
-          <li><a [routerLink]="['/contact']">Link</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- <button md-button [routerLink]="['/']">
+  </div>
+    <md-toolbar-row>
+    <div class="container-fluid">
+     <button md-button [routerLink]="['/']">
       Home
       </button>
 
@@ -37,7 +18,9 @@
 
       <button md-raised-button [routerLink]="['/contact']">
         Contact Me
-    </button> -->
+    </button> 
+    </div>
+  </md-toolbar-row>
 </md-toolbar>
 
 
