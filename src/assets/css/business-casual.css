@@ -48,10 +48,13 @@ hr {
     display: none;
 }
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 1e0709d8cfa4aee87acd3eb80006d2049cd4a243
 .img-full {
     min-width: 100%;
 }
@@ -101,6 +104,10 @@ hr {
     margin: 0 auto 0;
 }
 
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
+
 footer {
     background: #fff;
     background: rgba(255,255,255,0.9);
@@ -109,6 +116,7 @@ footer {
 footer p {
     margin: 0;
     padding: 50px 0;
+<<<<<<< HEAD
 }
 
 
@@ -219,3 +227,6 @@ footer p {
         clear: both;
     }
 } 
+=======
+}
+>>>>>>> 1e0709d8cfa4aee87acd3eb80006d2049cd4a243
