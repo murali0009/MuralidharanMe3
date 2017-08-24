@@ -184,4 +184,41 @@ footer p {
     }
 } 
 
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+#Carousel .carousel-inner .item {
+    height:200px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+#Carousel .carousel-inner .item {
+    height:300px;
+} 
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+#Carousel .carousel-inner .item {
+    height:400px;
+}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+#Carousel .carousel-inner .item {
+    height:500px;
+}
+}
+
+#Carousel .carousel-inner .item img {
+max-height: 800px;  
+max-width: 100%; 
+position: absolute;  
+top: 0;  
+bottom: 0;  
+left: 0;  
+right: 0;  
+margin: auto;
+}
 
