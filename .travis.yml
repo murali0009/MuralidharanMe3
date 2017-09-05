@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - "6.9.1"
+
+install:
+  - npm i -g yarn && yarn
+
+before_script:
+  - yarn prod
+
+deploy:
+  provider: azure_web_apps
+  username: nandam1984       # If AZURE_WA_USERNAME isn't set
+  password: password123   # If AZURE_WA_PASSWORD isn't set
+  site: http://muralidharan.azurewebsites.net      # If AZURE_WA_SITE isn't set
+
+before_deploy: "echo 'ready?'"
