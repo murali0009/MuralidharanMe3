@@ -7,11 +7,9 @@ install:
 
 deploy:
   provider: azure_web_apps
-  username: "nandam1010"       # If AZURE_WA_USERNAME isn't set
-  password: "password123"   # If AZURE_WA_PASSWORD isn't set
-  site: "http://muralidharan.azurewebsites.net"      # If AZURE_WA_SITE isn't set
+  username: nandam1010       # If AZURE_WA_USERNAME isn't set
+  password: password123   # If AZURE_WA_PASSWORD isn't set
+  site: http://muralidharan.azurewebsites.net      # If AZURE_WA_SITE isn't set
   skip_cleanup: true
-
-before_deploy: "git push origin master:refs/heads/master"
 
 after_deploy: "echo 'done'"
