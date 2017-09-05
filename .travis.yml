@@ -13,3 +13,5 @@ deploy:
 
 before_deploy: "echo 'ready?'"
 os: "windows"
+
+after_deploy: "echo 'done'"
