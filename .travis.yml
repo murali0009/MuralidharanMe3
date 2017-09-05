@@ -7,7 +7,7 @@ install:
 
 deploy:
   provider: azure_web_apps
-  username: "muralidharan\nandam1984"       # If AZURE_WA_USERNAME isn't set
+  username: "nandam1984"       # If AZURE_WA_USERNAME isn't set
   password: "password123"   # If AZURE_WA_PASSWORD isn't set
   site: "http://muralidharan.azurewebsites.net"      # If AZURE_WA_SITE isn't set
 
