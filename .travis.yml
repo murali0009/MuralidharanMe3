@@ -5,9 +5,6 @@ node_js:
 install:
   - npm i -g yarn && yarn
 
-before_script:
-  - yarn prod
-
 deploy:
   provider: azure_web_apps
   username: nandam1984       # If AZURE_WA_USERNAME isn't set
