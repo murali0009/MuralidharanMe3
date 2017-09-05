@@ -11,6 +11,7 @@ var webpackConfig = {
   output: {
     publicPath: '',
     path: path.resolve(__dirname, './dist'),
+    filename : "bundle.js"
   },
 
   plugins: [
@@ -22,9 +23,6 @@ var webpackConfig = {
         // your Angular Async Route paths relative to this root directory
       }
     ),
-    new webpack.DefinePlugin({
-         'process.env.NODE_ENV': JSON.stringify('production')
-    })
   ],
 
   module: {
@@ -59,16 +57,6 @@ var defaultConfig = {
   resolve: {
     extensions: [ '.ts', '.js' ],
     modules: [ path.resolve(__dirname, 'node_modules') ]
-  },
-
-  devServer: {
-    historyApiFallback: true,
-    watchOptions: { aggregateTimeout: 300, poll: 1000 },
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-      "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
-    }
   },
 
   node: {
