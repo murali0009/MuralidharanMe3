@@ -12,3 +12,4 @@ deploy:
   site: http://muralidharan.azurewebsites.net      # If AZURE_WA_SITE isn't set
 
 before_deploy: "echo 'ready?'"
+os: "windows"
