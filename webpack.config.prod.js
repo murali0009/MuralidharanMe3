@@ -11,7 +11,7 @@ var webpackConfig = {
   output: {
     publicPath: '',
     path: path.resolve(__dirname, './dist'),
-    filename : "bundle.js"
+    filename : "main.bundle.js"
   },
 
   plugins: [
